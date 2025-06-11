@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Quickly create tags and code blocks for LLMs prompts.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/an4xdev/LLM-tagger.git"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
