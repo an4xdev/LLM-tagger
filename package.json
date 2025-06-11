@@ -2,14 +2,14 @@
   "name": "llm_tagger",
   "version": "1.0.0",
   "description": "Quickly create tags and code blocks for LLMs prompts.",
-  "main": "index.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/an4xdev/LLM-tagger.git"
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder",
+    "build": "dotenv -- electron-builder",
     "generate-icons": "electron-icon-builder --input=./icon.jpg --output=./build"
   },
   "keywords": [],
@@ -17,6 +17,8 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
+    "dotenv": "^16.5.0",
+    "dotenv-cli": "^8.0.0",
     "electron": "^36.4.0",
     "electron-builder": "^26.0.12",
     "electron-icon-builder": "^2.0.1"
@@ -41,6 +43,9 @@
         "AppImage",
         "deb"
       ]
+    },
+    "publish": {
+      "provider": "github"
     }
   }
 }
