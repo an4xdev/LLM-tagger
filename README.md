@@ -12,6 +12,13 @@ Quickly create tags and code blocks for LLMs prompts.
 
 ## Build
 
+Create .env file in the root directory with the following content:
+```env
+GH_TOKEN=TOKEN_HERE
+```
+
+Then run the following commands to build the project:
+
 ```bash
 > npm run build
 ```
